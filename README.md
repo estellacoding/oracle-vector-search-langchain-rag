@@ -2,13 +2,13 @@
 
 此專案會分享如何使用 Oracle 資料庫和 LangChain 建立一個 RAG 應用，是參照 Oracle LiveLabs 這篇 [Oracle LiveLabs 的 AI Vector Search - 7 Easy Steps to Building a RAG Application](https://apexapps.oracle.com/pls/apex/f?p=133:180:108165763619849::::wid:3927) 教學。
 
-主要會處理一份 PDF 文件，提取文本、向量化後，再存入 Oracle 資料庫中，讓使用者能夠用問答方式進行查詢並檢索 PDF 的資訊。PDF 文件是使用 202402_2330_AI1_20241003_160741.pdf，這是台積電的 2024 Q2 財報，你可以使用其他文件，或是也可以用這份文件來測試 RAG 的功能。
+主要會處理一份 PDF 文件，提取文本、向量化後，再存入 Oracle 資料庫中，讓使用者能夠用問答方式查詢 PDF 的資訊。PDF 文件是使用 202402_2330_AI1_20241003_160741.pdf，這是台積電的 2024 Q2 財報，你可以使用其他文件，或是也可以用這份文件來測試 RAG 的功能。
 
 # 主要功能
 - PDF 處理：將 PDF 文件轉換為文本區塊。
 - 向量化：使用 HuggingFace 的嵌入模型將文本轉換為向量。
-- Oracle 資料庫整合：將向量化的文檔存入並從 Oracle 資料庫檢索。
-- 問答功能：基於文檔內容生成用戶查詢的答案。
+- 整合 Oracle 資料庫：將向量化的文檔存入並從 Oracle 資料庫檢索。
+- 問答功能：根據文檔內容及 gpt-4 生成用戶查詢的答案。
 
 # 執行專案步驟
 ## 複製專案
