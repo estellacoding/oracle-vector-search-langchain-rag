@@ -1,0 +1,12 @@
+numpy
+python-dotenv
+PyPDF2
+oracledb
+langchain
+langchain_openai
+langchain_community
+langchain_huggingface
+openai
+requests
+tqdm
+transformers
